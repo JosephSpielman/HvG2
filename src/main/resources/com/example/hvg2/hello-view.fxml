@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="pnMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hvg2.HelloController">
+   <children>
+      <ButtonBar layoutX="123.0" layoutY="253.0" prefHeight="40.0" prefWidth="348.0">
+        <buttons>
+          <Button fx:id="btnNorth" mnemonicParsing="false" onAction="#movePlayerNorth" text="North" disable="true" />
+            <Button fx:id="btnSouth" mnemonicParsing="false" onAction="#movePlayerSouth" text="South" disable="true" />
+            <Button fx:id="btnEast" mnemonicParsing="false" onAction="#movePlayerEast" text="East" disable="true" />
+            <Button fx:id="btnWest" mnemonicParsing="false" onAction="#movePlayerWest" text="West" disable="true"/>
+        </buttons>
+      </ButtonBar>
+      <Button fx:id="btnStart" layoutX="278.0" layoutY="300.0" mnemonicParsing="false" onAction="#fillGameBoard" text="Start" />
+      <Label fx:id="lblBoard" layoutX="252.0" layoutY="89.0" maxHeight="500.0" maxWidth="300.0" text="label" />
+   </children>
+</Pane>
